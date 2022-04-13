@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArchawinWongkittiruk/TrelloClone.git"
+    "url": "git+https://github.com/hoangtin298/PintuScrum"
   },
   "author": "Archawin Wongkittiruk",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ArchawinWongkittiruk/TrelloClone/issues"
+    "url": "https://github.com/hoangtin298/PintuScrum"
   },
-  "homepage": "https://github.com/ArchawinWongkittiruk/TrelloClone#readme",
+  "homepage": "https://github.com/hoangtin298/PintuScrum",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "dotenv": "^8.2.0",
