@@ -1,39 +1,37 @@
-import React, { useEffect } from 'react';
-import { Button } from '@material-ui/core';
-import { Redirect } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from "react";
+import { Button } from "@material-ui/core";
+import { Redirect } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Landing = () => {
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
 
   useEffect(() => {
-    document.title = 'TrelloClone';
+    document.title = "Pintu Group";
   }, []);
 
   if (isAuthenticated) {
-    return <Redirect to='/dashboard' />;
+    return <Redirect to="/dashboard" />;
   }
 
   return (
-    <section className='landing'>
-      <nav className='top'>
-        <h2>TrelloClone</h2>
+    <section className="landing">
+      <nav className="top">
+        <h2>Work Together</h2>
         <div>
-          <Button color='inherit' href='/login'>
+          <Button color="inherit" href="/login">
             Login
           </Button>
-          <Button variant='contained' href='/register'>
+          <Button variant="contained" href="/register">
             Sign Up
           </Button>
         </div>
       </nav>
-      <div className='landing-inner'>
-        <h1>TrelloClone</h1>
-        <p>
-          Just like <a href='https://trello.com/'>Trello</a>, but made by just one guy!
-        </p>
-        <div className='buttons'>
-          <Button variant='outlined' color='inherit' href='/register'>
+      <div className="landing-inner">
+        <h1>Pintu Group</h1>
+        <p>Let's work together</p>
+        <div className="buttons">
+          <Button variant="outlined" color="inherit" href="/register">
             Sign Up
           </Button>
         </div>
